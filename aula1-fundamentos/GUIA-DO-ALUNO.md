@@ -56,6 +56,14 @@ Abra <https://platform.openai.com/tokenizer> (alternativa: <https://tiktokenizer
 Cole, um por vez, e anote a contagem de tokens:
 
 1. `Programadores do Amanhã` — quantos tokens? Onde a palavra "Programadores" quebra?
+
+- Tokens
+5
+Characters
+23
+Programadores do Amanhã
+
+id: [13587, 7151, 621, 117747, 46160]
 2. O mesmo parágrafo em português e em inglês. Sugestão:
    - PT: `O modelo de linguagem prevê o próximo pedaço de texto com base em tudo que veio antes.`
    - EN: `The language model predicts the next piece of text based on everything that came before.`
