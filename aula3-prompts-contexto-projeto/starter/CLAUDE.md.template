@@ -1,0 +1,59 @@
+# <TODO: nome do seu projeto>
+
+<!--
+  Este é o esqueleto do CLAUDE.md do SEU projeto — o que nasce na aula 4.
+  Copie este arquivo pra raiz do seu repositório novo como `CLAUDE.md` e preencha os TODOs.
+
+  Regra que não muda desde a aula 1: este arquivo entra na janela de contexto do Claude
+  Code em TODA sessão neste projeto. É curto de propósito — cada linha aqui custa token
+  em cada turno. Documentação oficial recomenda manter abaixo de 200 linhas por arquivo;
+  nesta fase do seu projeto, se você passar de 40 linhas, provavelmente está documentando
+  coisa que o agente descobre sozinho lendo o código. Corte.
+  Referência: https://code.claude.com/docs/en/memory
+
+  Quando terminar de preencher, apague todos os comentários HTML e os TODOs.
+-->
+
+## O que é este projeto
+
+TODO: uma frase — o problema real que isso resolve, sem jargão. (Essa frase é a semente
+do parágrafo pro dono do negócio que vai na sua ENTREGAVEL.md — escreva as duas juntas.)
+
+TODO: pra quem é (você mesma, um cliente, a ONG, outro aluno)?
+
+## Stack
+
+<!-- Preencha só DEPOIS que o agente gerou o esqueleto e você decidiu o que aceitar. -->
+- TODO: linguagem e versão
+- TODO: framework/lib principal, se tiver
+- TODO: como os módulos são organizados
+
+## Comandos
+
+- TODO: comando pra instalar dependências
+- TODO: comando pra rodar o projeto localmente
+- TODO: comando pra rodar os testes — **tem que ser um comando real que roda no seu
+  terminal agora**, não um comando que você pretende ter um dia
+
+## Regras
+
+- Os arquivos de teste são a especificação. **Nunca edite testes pra fazê-los passar.**
+- TODO: escreva a regra "sempre rode os testes antes de dizer que terminou" com as suas
+  palavras
+- TODO: uma regra sobre não inventar dependência ou biblioteca sem te perguntar antes
+  (você viu por que essa regra existe na demo da aula 3 — se não viu, pergunte)
+- TODO: uma regra de estilo sua
+
+## Como eu quero trabalhar com você
+
+- Antes de criar ou mudar arquivos, me mostre o plano (o que vai existir, em que pasta) e
+  espere eu confirmar.
+- Mudanças pequenas e focadas. Uma tarefa por vez.
+- Se não tiver certeza sobre uma API ou lib, diga que não tem certeza em vez de inventar.
+- TODO: adicione uma preferência sua (como você gosta de receber a explicação do que
+  mudou, em que idioma, com que nível de detalhe)
+
+## Onde este projeto está
+
+- TODO: link do repositório
+- TODO: se tem alguém real esperando isso funcionar (cliente, a ONG, um aluno), quem é

@@ -1,0 +1,8 @@
+# Confirmado em pypi.org/project/google-adk em 2026-09-13: pacote "google-adk",
+# versão mais recente 2.9.0. Python 3.10+ obrigatório.
+google-adk>=2.9.0
+
+# Tracing do Lab 2 (starter/GUIA-TRACING.md) — pacotes confirmados na doc
+# oficial de integração Langfuse + ADK (REFERENCIAS.md item 12):
+langfuse
+openinference-instrumentation-google-adk

@@ -1,0 +1,9 @@
+{
+  "name": "perfis-pda-busca",
+  "version": "0.1.0",
+  "description": "Listagem publica de perfis de alunos da PDA (domínio 1 do catálogo) — projeto de exemplo para o lab de leitura em camadas da Semana 9.",
+  "scripts": {
+    "test": "node --test",
+    "lint": "node scripts/lint-simples.js"
+  }
+}

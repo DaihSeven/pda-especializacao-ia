@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test:*)",
+      "Bash(npm run checar-chave:*)",
+      "Bash(npm run ingerir:*)",
+      "Bash(npm run perguntar:*)",
+      "Bash(npm run comparar-chunking:*)",
+      "Bash(npm run eval-retrieval:*)",
+      "Bash(node --test:*)",
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)"
+    ],
+    "deny": [
+      "Read(.env)"
+    ]
+  }
+}

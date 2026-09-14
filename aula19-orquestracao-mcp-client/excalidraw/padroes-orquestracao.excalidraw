@@ -1,0 +1,989 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "pda",
+  "elements": [
+    {
+      "type": "text",
+      "id": "t-title",
+      "x": 40,
+      "y": 20,
+      "width": 414.0,
+      "height": 39.0,
+      "text": "PADRÕES DE ORQUESTRAÇÃO",
+      "fontSize": 30,
+      "strokeColor": "#5f3dc4",
+      "opacity": 100
+    },
+    {
+      "type": "text",
+      "id": "t-sub",
+      "x": 40,
+      "y": 60,
+      "width": 595.1999999999999,
+      "height": 20.8,
+      "text": "sequencial · paralelo · supervisor  —  onde cada um custa caro",
+      "fontSize": 16,
+      "strokeColor": "#495057",
+      "opacity": 100
+    },
+    {
+      "type": "rectangle",
+      "id": "z1-bg",
+      "x": 40,
+      "y": 110,
+      "width": 520,
+      "height": 340,
+      "strokeColor": "#4a9eed",
+      "backgroundColor": "#dbe4ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 30,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "z1-title",
+      "x": 60,
+      "y": 125,
+      "width": 156.0,
+      "height": 26.0,
+      "text": "1. SEQUENCIAL",
+      "fontSize": 20,
+      "strokeColor": "#1c3d8f",
+      "opacity": 100
+    },
+    {
+      "type": "rectangle",
+      "id": "z1-a1",
+      "x": 70,
+      "y": 220,
+      "width": 150,
+      "height": 70,
+      "strokeColor": "#8b5cf6",
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "AGENTE 1",
+        "fontSize": 20
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "z1-a2",
+      "x": 260,
+      "y": 220,
+      "width": 150,
+      "height": 70,
+      "strokeColor": "#8b5cf6",
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "AGENTE 2",
+        "fontSize": 20
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "z1-a3",
+      "x": 450,
+      "y": 220,
+      "width": 100,
+      "height": 70,
+      "strokeColor": "#8b5cf6",
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "AGENTE 3",
+        "fontSize": 16
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "z1-arr1",
+      "x": 220,
+      "y": 255,
+      "width": 40,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow",
+      "startBinding": {
+        "elementId": "z1-a1",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "z1-a2",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "z1-arr2",
+      "x": 410,
+      "y": 255,
+      "width": 40,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow",
+      "startBinding": {
+        "elementId": "z1-a2",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "z1-a3",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "id": "z1-note",
+      "x": 70,
+      "y": 340,
+      "width": 604.8,
+      "height": 20.8,
+      "text": "1 tarefa por vez, na ordem.\nZero conflito. Zero ganho de tempo.",
+      "fontSize": 16,
+      "strokeColor": "#343a40",
+      "opacity": 100
+    },
+    {
+      "type": "text",
+      "id": "z1-note2",
+      "x": 70,
+      "y": 400,
+      "width": 462.0,
+      "height": 18.2,
+      "text": "Use quando a tarefa 2 depende\ndo resultado da tarefa 1.",
+      "fontSize": 14,
+      "strokeColor": "#757575",
+      "opacity": 100
+    },
+    {
+      "type": "rectangle",
+      "id": "z2-bg",
+      "x": 620,
+      "y": 110,
+      "width": 520,
+      "height": 340,
+      "strokeColor": "#8b5cf6",
+      "backgroundColor": "#e5dbff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 30,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "z2-title",
+      "x": 640,
+      "y": 125,
+      "width": 132.0,
+      "height": 26.0,
+      "text": "2. PARALELO",
+      "fontSize": 20,
+      "strokeColor": "#5f3dc4",
+      "opacity": 100
+    },
+    {
+      "type": "rectangle",
+      "id": "z2-a1",
+      "x": 650,
+      "y": 190,
+      "width": 170,
+      "height": 60,
+      "strokeColor": "#8b5cf6",
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "AGENTE 1",
+        "fontSize": 17
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "z2-a2",
+      "x": 650,
+      "y": 265,
+      "width": 170,
+      "height": 60,
+      "strokeColor": "#8b5cf6",
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "AGENTE 2",
+        "fontSize": 17
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "z2-a3",
+      "x": 650,
+      "y": 340,
+      "width": 170,
+      "height": 60,
+      "strokeColor": "#8b5cf6",
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "AGENTE 3",
+        "fontSize": 17
+      }
+    },
+    {
+      "type": "diamond",
+      "id": "z2-integ",
+      "x": 880,
+      "y": 220,
+      "width": 210,
+      "height": 150,
+      "strokeColor": "#e8590c",
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "label": {
+        "text": "INTEGRAÇÃO\n(aqui mora o\ncusto)",
+        "fontSize": 15,
+        "strokeColor": "#a83e00"
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "z2-arr1",
+      "x": 820,
+      "y": 220,
+      "width": 60,
+      "height": 25,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          25
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow",
+      "startBinding": {
+        "elementId": "z2-a1",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "z2-integ",
+        "fixedPoint": [
+          0,
+          0.3
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "z2-arr2",
+      "x": 820,
+      "y": 295,
+      "width": 60,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          0
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow",
+      "startBinding": {
+        "elementId": "z2-a2",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "z2-integ",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "z2-arr3",
+      "x": 820,
+      "y": 370,
+      "width": 60,
+      "height": -25,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          -25
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow",
+      "startBinding": {
+        "elementId": "z2-a3",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "z2-integ",
+        "fixedPoint": [
+          0,
+          0.7
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "id": "z2-note",
+      "x": 650,
+      "y": 420,
+      "width": 1080.0,
+      "height": 19.5,
+      "text": "3 tarefas ao mesmo tempo.\nRápido até aqui — o preço aparece na integração:\nmerge, diffs pra revisar, contexto duplicado.",
+      "fontSize": 15,
+      "strokeColor": "#343a40",
+      "opacity": 100
+    },
+    {
+      "type": "rectangle",
+      "id": "z3-bg",
+      "x": 1180,
+      "y": 110,
+      "width": 560,
+      "height": 340,
+      "strokeColor": "#22c55e",
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 30,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "z3-title",
+      "x": 1200,
+      "y": 125,
+      "width": 156.0,
+      "height": 26.0,
+      "text": "3. SUPERVISOR",
+      "fontSize": 20,
+      "strokeColor": "#15803d",
+      "opacity": 100
+    },
+    {
+      "type": "rectangle",
+      "id": "z3-sup",
+      "x": 1350,
+      "y": 170,
+      "width": 180,
+      "height": 60,
+      "strokeColor": "#8b5cf6",
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "SUPERVISOR",
+        "fontSize": 16
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "z3-w1",
+      "x": 1200,
+      "y": 290,
+      "width": 140,
+      "height": 60,
+      "strokeColor": "#4a9eed",
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "WORKER 1",
+        "fontSize": 14
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "z3-w2",
+      "x": 1360,
+      "y": 290,
+      "width": 140,
+      "height": 60,
+      "strokeColor": "#4a9eed",
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "WORKER 2",
+        "fontSize": 14
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "z3-w3",
+      "x": 1520,
+      "y": 290,
+      "width": 140,
+      "height": 60,
+      "strokeColor": "#4a9eed",
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "WORKER 3",
+        "fontSize": 14
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "z3-syn",
+      "x": 1560,
+      "y": 170,
+      "width": 160,
+      "height": 60,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "SÍNTESE FINAL",
+        "fontSize": 14
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "z3-a1",
+      "x": 1385,
+      "y": 230,
+      "width": -115,
+      "height": 60,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -115,
+          60
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow",
+      "startBinding": {
+        "elementId": "z3-sup",
+        "fixedPoint": [
+          0.3,
+          1
+        ]
+      },
+      "endBinding": {
+        "elementId": "z3-w1",
+        "fixedPoint": [
+          0.5,
+          0
+        ]
+      },
+      "startArrowhead": "arrow",
+      "label": {
+        "text": "delega/reporta",
+        "fontSize": 14
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "z3-a2",
+      "x": 1440,
+      "y": 230,
+      "width": 0,
+      "height": 60,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          60
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow",
+      "startBinding": {
+        "elementId": "z3-sup",
+        "fixedPoint": [
+          0.5,
+          1
+        ]
+      },
+      "endBinding": {
+        "elementId": "z3-w2",
+        "fixedPoint": [
+          0.5,
+          0
+        ]
+      },
+      "startArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "z3-a3",
+      "x": 1495,
+      "y": 230,
+      "width": 95,
+      "height": 60,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          95,
+          60
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow",
+      "startBinding": {
+        "elementId": "z3-sup",
+        "fixedPoint": [
+          0.7,
+          1
+        ]
+      },
+      "endBinding": {
+        "elementId": "z3-w3",
+        "fixedPoint": [
+          0.5,
+          0
+        ]
+      },
+      "startArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "z3-a4",
+      "x": 1530,
+      "y": 200,
+      "width": 30,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow",
+      "startBinding": {
+        "elementId": "z3-sup",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "z3-syn",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "id": "z3-note",
+      "x": 1200,
+      "y": 420,
+      "width": 1402.8,
+      "height": 18.2,
+      "text": "Supervisor delega, workers respondem,\nsupervisor decide o que fazer com cada resposta.\nCusto: o supervisor vira gargalo se toda\nresposta passa por ele antes de seguir.",
+      "fontSize": 14,
+      "strokeColor": "#343a40",
+      "opacity": 100
+    },
+    {
+      "type": "rectangle",
+      "id": "legend-bg",
+      "x": 40,
+      "y": 480,
+      "width": 480,
+      "height": 150,
+      "strokeColor": "#f59e0b",
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "legend-title",
+      "x": 60,
+      "y": 495,
+      "width": 67.2,
+      "height": 20.8,
+      "text": "LEGENDA",
+      "fontSize": 16,
+      "strokeColor": "#7d5a00",
+      "opacity": 100
+    },
+    {
+      "type": "rectangle",
+      "id": "legend-1",
+      "x": 60,
+      "y": 530,
+      "width": 26,
+      "height": 26,
+      "strokeColor": "#8b5cf6",
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "legend-1t",
+      "x": 96,
+      "y": 532,
+      "width": 344.4,
+      "height": 18.2,
+      "text": "agente (LLM + harness rodando uma tarefa)",
+      "fontSize": 14,
+      "strokeColor": "#343a40",
+      "opacity": 100
+    },
+    {
+      "type": "diamond",
+      "id": "legend-2",
+      "x": 60,
+      "y": 565,
+      "width": 26,
+      "height": 26,
+      "strokeColor": "#e8590c",
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100
+    },
+    {
+      "type": "text",
+      "id": "legend-2t",
+      "x": 96,
+      "y": 567,
+      "width": 436.8,
+      "height": 18.2,
+      "text": "ponto de integração / decisão — onde o custo aparece",
+      "fontSize": 14,
+      "strokeColor": "#343a40",
+      "opacity": 100
+    },
+    {
+      "type": "text",
+      "id": "legend-3t",
+      "x": 60,
+      "y": 600,
+      "width": 445.2,
+      "height": 18.2,
+      "text": "seta com duas pontas = ida e volta (delega e reporta)",
+      "fontSize": 14,
+      "strokeColor": "#343a40",
+      "opacity": 100
+    },
+    {
+      "type": "rectangle",
+      "id": "fill-bg",
+      "x": 620,
+      "y": 480,
+      "width": 1120,
+      "height": 260,
+      "strokeColor": "#757575",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "text",
+      "id": "fill-title",
+      "x": 640,
+      "y": 495,
+      "width": 529.1999999999999,
+      "height": 23.400000000000002,
+      "text": "SEU CASO — preencher no Lab 1 (~min 50 da aula 1)",
+      "fontSize": 18,
+      "strokeColor": "#495057",
+      "opacity": 100
+    },
+    {
+      "type": "text",
+      "id": "fill-q",
+      "x": 640,
+      "y": 530,
+      "width": 1206.0,
+      "height": 19.5,
+      "text": "Qual padrão vocês escolheram para o MCP client + as 3 tarefas do speedrun?\nPor quê? O que muda se uma das 3 tarefas depender da outra?",
+      "fontSize": 15,
+      "strokeColor": "#757575",
+      "opacity": 100
+    },
+    {
+      "type": "rectangle",
+      "id": "fill-1",
+      "x": 640,
+      "y": 610,
+      "width": 340,
+      "height": 100,
+      "strokeColor": "#757575",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "text",
+      "id": "fill-1t",
+      "x": 655,
+      "y": 620,
+      "width": 235.2,
+      "height": 18.2,
+      "text": "padrão escolhido\n(preencher)",
+      "fontSize": 14,
+      "strokeColor": "#adb5bd",
+      "opacity": 100
+    },
+    {
+      "type": "rectangle",
+      "id": "fill-2",
+      "x": 1000,
+      "y": 610,
+      "width": 340,
+      "height": 100,
+      "strokeColor": "#757575",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "text",
+      "id": "fill-2t",
+      "x": 1015,
+      "y": 620,
+      "width": 159.6,
+      "height": 18.2,
+      "text": "por quê\n(preencher)",
+      "fontSize": 14,
+      "strokeColor": "#adb5bd",
+      "opacity": 100
+    },
+    {
+      "type": "rectangle",
+      "id": "fill-3",
+      "x": 1360,
+      "y": 610,
+      "width": 340,
+      "height": 100,
+      "strokeColor": "#757575",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "text",
+      "id": "fill-3t",
+      "x": 1375,
+      "y": 620,
+      "width": 462.0,
+      "height": 18.2,
+      "text": "o que mudaria com dependência\nentre tarefas (preencher)",
+      "fontSize": 14,
+      "strokeColor": "#adb5bd",
+      "opacity": 100
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  },
+  "files": {}
+}

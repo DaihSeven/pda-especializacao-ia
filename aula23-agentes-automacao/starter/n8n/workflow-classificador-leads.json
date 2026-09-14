@@ -1,0 +1,218 @@
+{
+  "name": "PDA - Classificador de mensagens de cliente (Semana 12)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "lead-pda",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "node-webhook",
+      "name": "1. Gatilho real (Webhook)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [-40, 260],
+      "webhookId": "pda-turma2-lead-pda"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "assign-nome",
+              "name": "nome",
+              "type": "string",
+              "value": "={{ $json.body.nome || 'sem nome' }}"
+            },
+            {
+              "id": "assign-mensagem",
+              "name": "mensagem",
+              "type": "string",
+              "value": "={{ $json.body.mensagem || '' }}"
+            },
+            {
+              "id": "assign-canal",
+              "name": "canal",
+              "type": "string",
+              "value": "={{ $json.body.canal || 'formulario' }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "node-normalizar",
+      "name": "2. Normalizar entrada",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [180, 260]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "anthropic-version", "value": "2023-06-01" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({\n  model: \"claude-haiku-4-5-20251001\",\n  max_tokens: 400,\n  system: \"Você classifica mensagens que chegam pro contato de um pequeno negócio ou freelancer da PDA. Responda só chamando a tool classificar_mensagem. Nunca invente dado que não está na mensagem.\",\n  tools: [{\n    name: \"classificar_mensagem\",\n    description: \"Classifica a mensagem recebida e sugere uma resposta curta.\",\n    input_schema: {\n      type: \"object\",\n      properties: {\n        urgencia: { type: \"string\", enum: [\"baixa\", \"media\", \"alta\"] },\n        categoria: { type: \"string\", enum: [\"orcamento\", \"duvida\", \"reclamacao\", \"spam\", \"outro\"] },\n        resposta_sugerida: { type: \"string\", maxLength: 400 }\n      },\n      required: [\"urgencia\", \"categoria\", \"resposta_sugerida\"],\n      additionalProperties: false\n    }\n  }],\n  tool_choice: { type: \"tool\", name: \"classificar_mensagem\" },\n  messages: [{ role: \"user\", content: `Mensagem de ${$json.nome} (canal: ${$json.canal}):\\n\\n${$json.mensagem}` }]\n}) }}",
+        "options": {}
+      },
+      "id": "node-chamar-claude",
+      "name": "3. Classificar com Claude (HTTP Request)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [400, 260],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "SUBSTITUA_PELO_ID_DA_SUA_CREDENCIAL",
+          "name": "Anthropic API Key (header x-api-key)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "assign-urgencia",
+              "name": "urgencia",
+              "type": "string",
+              "value": "={{ $json.content.find(b => b.type === 'tool_use').input.urgencia }}"
+            },
+            {
+              "id": "assign-categoria",
+              "name": "categoria",
+              "type": "string",
+              "value": "={{ $json.content.find(b => b.type === 'tool_use').input.categoria }}"
+            },
+            {
+              "id": "assign-resposta",
+              "name": "resposta_sugerida",
+              "type": "string",
+              "value": "={{ $json.content.find(b => b.type === 'tool_use').input.resposta_sugerida }}"
+            },
+            {
+              "id": "assign-tokens-in",
+              "name": "tokens_entrada",
+              "type": "number",
+              "value": "={{ $json.usage.input_tokens }}"
+            },
+            {
+              "id": "assign-tokens-out",
+              "name": "tokens_saida",
+              "type": "number",
+              "value": "={{ $json.usage.output_tokens }}"
+            },
+            {
+              "id": "assign-custo",
+              "name": "custo_execucao_usd",
+              "type": "number",
+              "value": "={{ (($json.usage.input_tokens / 1000000) * 1) + (($json.usage.output_tokens / 1000000) * 5) }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "node-parsear-custo",
+      "name": "4. Extrair classificação + calcular custo",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [620, 260]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+          "conditions": [
+            {
+              "id": "cond-urgente",
+              "leftValue": "={{ $json.urgencia }}",
+              "rightValue": "alta",
+              "operator": { "type": "string", "operation": "equals" }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "node-if-urgente",
+      "name": "5. É urgente?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [840, 260]
+    },
+    {
+      "parameters": {
+        "notes": "PONTO DE INTEGRAÇÃO REAL: troque este NoOp por um node de e-mail, Slack ou WhatsApp de verdade. Fica fora do escopo de hoje porque cada aluno tem um canal diferente com o próprio negócio."
+      },
+      "id": "node-alerta-humano",
+      "name": "6a. Alertar humano (NoOp - troque pelo seu canal)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [1060, 140]
+    },
+    {
+      "parameters": {
+        "notes": "PONTO DE INTEGRAÇÃO REAL: troque este NoOp pelo envio automático de fato (e-mail, WhatsApp Business API, etc). O julgamento de QUANDO responder automático x escalar pra humano é seu, não do modelo."
+      },
+      "id": "node-resposta-automatica",
+      "name": "6b. Responder automático (NoOp - troque pelo seu canal)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [1060, 380]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { urgencia: $json.urgencia, categoria: $json.categoria, resposta_sugerida: $json.resposta_sugerida, custo_execucao_usd: $json.custo_execucao_usd } }}",
+        "options": {}
+      },
+      "id": "node-responder-webhook",
+      "name": "7. Responder o gatilho",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1280, 260]
+    }
+  ],
+  "connections": {
+    "1. Gatilho real (Webhook)": {
+      "main": [[{ "node": "2. Normalizar entrada", "type": "main", "index": 0 }]]
+    },
+    "2. Normalizar entrada": {
+      "main": [[{ "node": "3. Classificar com Claude (HTTP Request)", "type": "main", "index": 0 }]]
+    },
+    "3. Classificar com Claude (HTTP Request)": {
+      "main": [[{ "node": "4. Extrair classificação + calcular custo", "type": "main", "index": 0 }]]
+    },
+    "4. Extrair classificação + calcular custo": {
+      "main": [[{ "node": "5. É urgente?", "type": "main", "index": 0 }]]
+    },
+    "5. É urgente?": {
+      "main": [
+        [{ "node": "6a. Alertar humano (NoOp - troque pelo seu canal)", "type": "main", "index": 0 }],
+        [{ "node": "6b. Responder automático (NoOp - troque pelo seu canal)", "type": "main", "index": 0 }]
+      ]
+    },
+    "6a. Alertar humano (NoOp - troque pelo seu canal)": {
+      "main": [[{ "node": "7. Responder o gatilho", "type": "main", "index": 0 }]]
+    },
+    "6b. Responder automático (NoOp - troque pelo seu canal)": {
+      "main": [[{ "node": "7. Responder o gatilho", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "pinData": {},
+  "meta": {
+    "instanceId": "pda-turma2-semana12",
+    "descricao": "Gatilho real (webhook) -> normaliza -> Claude classifica com tool_use -> extrai custo por execução -> roteia por urgência -> responde. Ver starter/n8n/README-WORKFLOW.md antes de importar."
+  }
+}

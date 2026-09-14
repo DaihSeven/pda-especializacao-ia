@@ -1,0 +1,4 @@
+time,estrategia_escolhida,tempo_apostado_min,tempo_real_min,teve_conflito_merge,numero_de_diffs_revisados,testes_100_verdes_no_prazo,acerto_da_previsao_1a5,qualidade_do_pos_morte_1a5,nota_correcao_40,nota_previsao_30,nota_pos_morte_20,nota_velocidade_10,nota_final_100,categoria_premiada
+Time A,paralelo total (3 agentes),20,,,,,,,,,,,
+Time B,paralelo parcial (A+B juntos; C depois),25,,,,,,,,,,,
+Time C,sequencial (1 agente),35,,,,,,,,,,,

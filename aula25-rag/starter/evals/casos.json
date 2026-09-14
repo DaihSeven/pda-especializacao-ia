@@ -1,0 +1,37 @@
+[
+  {
+    "id": "TODO-fato-especifico-1",
+    "entrada": "TODO: uma pergunta sobre um fato específico e verificável do SEU corpus (um número, um nome, uma regra)",
+    "criterio_aprovacao": "TODO",
+    "tipo": "retrieval",
+    "contexto_esperado": ["TODO: o trecho exato que precisa vir no chunk recuperado pra a pergunta ser respondível"]
+  },
+  {
+    "id": "TODO-fato-especifico-2",
+    "entrada": "TODO",
+    "criterio_aprovacao": "TODO",
+    "tipo": "retrieval",
+    "contexto_esperado": ["TODO"]
+  },
+  {
+    "id": "TODO-pergunta-sem-parecenca-lexical",
+    "entrada": "TODO: uma pergunta que NÃO usa as mesmas palavras da resposta no seu corpus — é o caso que mais expõe RAG ingênuo (ver REFERENCIAS.md item 1)",
+    "criterio_aprovacao": "TODO",
+    "tipo": "retrieval",
+    "contexto_esperado": ["TODO"]
+  },
+  {
+    "id": "TODO-fronteira-de-chunk",
+    "entrada": "TODO: uma pergunta cuja resposta, no seu corpus, fica perto de uma quebra de parágrafo ou seção — o candidato natural a ser cortado ao meio",
+    "criterio_aprovacao": "TODO",
+    "tipo": "retrieval",
+    "contexto_esperado": ["TODO"]
+  },
+  {
+    "id": "TODO-seu-caso",
+    "entrada": "TODO: a pergunta que você, olhando pro SEU corpus, mais desconfia que o retrieval erra",
+    "criterio_aprovacao": "TODO",
+    "tipo": "retrieval",
+    "contexto_esperado": ["TODO"]
+  }
+]
