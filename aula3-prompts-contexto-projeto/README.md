@@ -5,8 +5,9 @@ Especialização em Desenvolvimento com IA · Programadores do Amanhã · Turma 
 
 Essa semana tem duas aulas com papéis diferentes. Na aula 3 você aprende (com demo ao
 vivo, erro incluído) por que um prompt vago te dá um resultado genérico e como controlar
-isso. Na aula 4 você usa o que aprendeu pra fazer nascer **o projeto que vai atravessar as
-próximas 12 semanas** — com o agente, não com um gerador pronto.
+isso — e **termina escolhendo o domínio e gerando o esqueleto inicial** do projeto que
+vai atravessar as próximas 12 semanas. Na aula 4 você continua esse esqueleto num lab
+guiado — com o agente, não com um gerador pronto.
 
 > Faz parte do repo do curso: [`pda-especializacao-ia`](../). Cada pasta na raiz é uma aula.
 
@@ -22,13 +23,14 @@ depois — as próximas 11 semanas constroem em cima do que sai daqui.
 1. Confirme que o ambiente da aula 1 ainda funciona: `claude --version` e `claude` abrindo
    sem erro. Se não funciona, resolve isso **antes** da aula 3 — não dá pra recuperar
    durante o lab.
-2. Faça o bloco da Alura desta semana **antes da aula 4** (é pré-requisito de entrada no
-   lab — ver `GUIA-DO-ALUNO.md`, seção Alura).
+2. Faça o bloco assíncrono desta semana **antes da aula 4** (é pré-requisito de entrada
+   no lab — ver `GUIA-DO-ALUNO.md`, seção "Bloco assíncrono").
 3. Na aula 3, acompanhe os slides e faça os dois labs curtos com o
-   [`GUIA-DO-ALUNO.md`](./GUIA-DO-ALUNO.md).
-4. Na aula 4, **antes de tudo**, decida seu domínio de projeto usando a pergunta de corte
-   da seção "Escolha de domínio" do guia — você tem 10 minutos, não mais. Depois, siga o
-   guia checkpoint por checkpoint enquanto a facilitadora constrói na tela.
+   [`GUIA-DO-ALUNO.md`](./GUIA-DO-ALUNO.md). **No ato final você escolhe o domínio do
+   projeto e gera o esqueleto inicial** — use a pergunta de corte da seção "Ato final"
+   do guia, você tem 10 minutos, não mais.
+4. Na aula 4, siga o guia checkpoint por checkpoint enquanto a facilitadora constrói na
+   tela — você continua o esqueleto que nasceu na aula 3.
 5. Depois da aula 4, feche a [`ENTREGAVEL.md`](./ENTREGAVEL.md).
 
 ## O que tem aqui
@@ -44,17 +46,17 @@ aula3-prompts-contexto-projeto/
 ```
 
 Não tem `src/` nem `tests/` prontos nesta pasta: **o código-base desta semana é o seu
-próprio projeto, ainda não existe.** Ele nasce na aula 4, dentro do repositório novo que
-você cria — não dentro deste fork do curso.
+próprio projeto, ainda não existe.** Ele nasce no ato final da aula 3, dentro do
+repositório novo que você cria — não dentro deste fork do curso.
 
 ## Pré-requisitos
 
 - Tudo da aula 1 funcionando: Claude Code instalado e logado, `git`, conta no GitHub.
-- Bloco da Alura desta semana concluído (Context Engineering — ver `GUIA-DO-ALUNO.md`).
-- Ter pensado, antes da aula 4, se você já tem um problema real em mente (domínio 7 do
-  catálogo) ou se vai escolher um dos cases da PDA. Pensar antes não é decidir antes — a
-  decisão final ainda acontece nos primeiros 10 minutos da aula 4, mas chegar sem ter
-  pensado nada custa os 10 minutos inteiros.
+- Bloco assíncrono desta semana concluído (Context Engineering — ver `GUIA-DO-ALUNO.md`).
+- Ter pensado, antes do fim da aula 3, se você já tem um problema real em mente (domínio
+  7 do catálogo) ou se vai escolher um dos cases da PDA. Pensar antes não é decidir
+  antes — a decisão final acontece no ato final da aula 3, mas chegar sem ter pensado
+  nada custa os 10 minutos inteiros.
 
 ## O catálogo de domínios (revisão rápida)
 
@@ -67,8 +69,8 @@ você cria — não dentro deste fork do curso.
 7. Domínio próprio do aluno
 
 Todos os sete funcionam com o mesmo processo desta semana — o que muda é o que você
-especifica pro agente, não como você especifica. Detalhe de como cada um se encaixa está
-em `PACOTE.md` (arquivo interno da facilitadora, mas pergunte se tiver dúvida no dia).
+especifica pro agente, não como você especifica. Dúvida sobre como algum se encaixa?
+Pergunte pra facilitadora no dia.
 
 ## Regra da casa
 

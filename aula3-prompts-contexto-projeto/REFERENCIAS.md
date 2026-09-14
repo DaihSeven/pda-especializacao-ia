@@ -85,7 +85,9 @@ o início da dumb zone em modelos de fronteira é debatido e varia (cita uma fai
 **Onde entra:** Aula 3, Bloco 2 — é a fonte do nome "Smart Zone / Dumb Zone" usado no
 slide 12 e na fala da facilitadora. **Importante:** este termo vem de conteúdo de
 comunidade (dicionário de aihero.dev, também associado a discussões públicas de Matt
-Pocock), não de um paper. Ver nota sobre o número "abaixo de 40%" em `PACOTE.md`.
+Pocock), não de um paper. Nota sobre o número "abaixo de ~40%": não há percentual fixo
+publicado como limiar de degradação (ver item 9) — o corte de 40% é observação empírica
+da facilitadora, apresentado em aula como tal, não como dado de pesquisa.
 
 ### 9. Explore the context window (Claude Code Docs)
 
@@ -97,14 +99,3 @@ doc oficial pesquisada, um percentual fixo publicado como limiar de degradação
 **Onde entra:** referência de apoio pra rodar `/context` ao vivo na demo (Aula 3, Bloco
 2) e mostrar o que compõe a janela desde o início da sessão.
 
----
-
-## Sobre o número "abaixo de 40%"
-
-Não existe, nas fontes pesquisadas (docs oficiais da Anthropic/Claude Code, o relatório
-da Chroma, o paper Lost in the Middle), um percentual fixo publicado como limiar exato de
-degradação de contexto. O conceito de Smart Zone/Dumb Zone (referência 8) menciona uma
-faixa de tokens absolutos que varia por modelo, não um percentual universal. Tratamos
-"abaixo de 40%" como **observação prática e empírica**, não como número validado em
-pesquisa — e dizemos isso explicitamente na aula (ver frase no roteiro, Bloco 2, slide
-12: "seja honesta sobre isso"). Detalhe completo em `PACOTE.md`.

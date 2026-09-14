@@ -1,8 +1,12 @@
 # Guia do aluno — Semana 2: Prompt, contexto e o nascimento do projeto
 
-Este guia cobre as duas aulas. A aula 3 é curta em mão na massa (dois labs de 15 e 25
-min); a aula 4 é lab do início ao fim — você constrói o projeto acompanhando a
-facilitadora, checkpoint a cada 20 minutos.
+Este guia cobre as duas aulas. A aula 3 é conceito + demo com mão na massa (dois labs de
+15 e 25 min) e **termina com a escolha do seu domínio e o esqueleto inicial do projeto**;
+a aula 4 é lab guiado do início ao fim — você continua o que nasceu na aula 3,
+acompanhando a facilitadora, checkpoint a cada 20 minutos.
+
+(O `ENTREGAVEL.md` chama essas aulas de "aula 1" e "aula 2" — são a aula 3 e a aula 4 do
+curso. Semana 2 = aulas 3 e 4.)
 
 Regra de sempre: terminal aberto do lado. Travou? Manda o erro no chat, segue em dupla.
 
@@ -22,7 +26,7 @@ agora, antes da aula começar — não durante o lab.
 
 ---
 
-## Alura desta semana (pré-requisito de entrada na aula 4)
+## Bloco assíncrono desta semana (Alura — pré-requisito de entrada na aula 4)
 
 Curso: **Context Engineering: otimização da janela de contexto de IAs** (Alura, 4h/35
 atividades — [alura.com.br/curso-online-context-engineering-otimizacao-da-janela-de-contexto-de-ias](https://www.alura.com.br/curso-online-context-engineering-otimizacao-da-janela-de-contexto-de-ias)).
@@ -58,7 +62,7 @@ fazer com a informação que tinha.
 Agora é sua vez:
 
 1. Pegue um prompt de uma linha que a facilitadora vai distribuir (ou use um seu, ligado
-   ao domínio que você está considerando pra aula 4).
+   ao domínio que você está considerando pro seu projeto).
 2. Rode ele exatamente como está no Claude Code. Anote o que voltou.
 3. Reescreva aplicando os três controles que você acabou de ver na teoria:
    - **especificidade** — stack, restrições, o que NÃO fazer
@@ -101,17 +105,20 @@ Anote no chat da turma: em que ponto (que percentual aproximado de `/context`) a
 começou a piorar pra você? Não precisa ser exato — o ponto do exercício é que você viu a
 queda acontecer, não que você mediu um número oficial.
 
----
+### Ato final (10 min) — Escolha de domínio + esqueleto inicial
 
-## AULA 4 — Lab guiado paralelo: nasce o seu projeto
+A partir de hoje, tudo que você fizer no curso soma no mesmo projeto — e ele começa
+agora, não na aula 4. Dois passos:
 
-Formato: a facilitadora constrói o dela na tela, você constrói a sua em paralelo, mesmo
-ritmo. Checkpoint a cada ~20 minutos — a facilitadora não avança pro próximo até a
-maioria confirmar o atual. **Não tem conteúdo novo nesta aula.** Se travar em algo
-conceitual, é hora de voltar pra aula 3 ou pra Alura, não de a facilitadora explicar de
-novo do zero.
+**1. Escolha seu domínio.** O catálogo:
 
-### Antes de começar: escolha de domínio (até 10 minutos, sem exceção)
+1. Listagem de perfis de alunos da PDA
+2. Captação de clientes e automações pra alunos freelancers da PDA
+3. Quiz conectado ao Claude
+4. Avaliação automatizada de projetos por IA
+5. Agente de revisão de código com a voz da PDA
+6. Problema real da ONG ou das próprias aulas (trazido pela facilitadora)
+7. Domínio próprio do aluno
 
 75 pessoas escolhendo domínio ao mesmo tempo trava se não tiver um critério. Use esta
 única pergunta:
@@ -123,21 +130,44 @@ novo do zero.
   frase agora, antes de abrir o agente.
 - **Sim, mas é da ONG ou de outra turma** → provavelmente domínio 6 — confirme com a
   facilitadora em 1 frase no chat.
-- **Não tenho um problema próprio claro** → você tem até o minuto 8 pra escolher entre os
-  domínios 1 a 5 olhando a lista. **Critério de desempate: qual desses te daria mais
-  raiva de continuar mal resolvido depois de 12 semanas de trabalho seu em cima dele?**
-  Esse é o que você escolhe.
-- **Ainda não decidiu no minuto 8** → cai automaticamente no default: **domínio 3, Quiz
-  conectado ao Claude.** É o mais simples de especificar bem no primeiro esqueleto e
-  funciona pra qualquer nível de experiência. Ninguém fica sem projeto.
+- **Não tenho um problema próprio claro** → escolha entre os domínios 1 a 5. **Critério
+  de desempate: qual desses te daria mais raiva de continuar mal resolvido depois de 12
+  semanas de trabalho seu em cima dele?** Esse é o que você escolhe.
+- **Ainda não decidiu** → cai no default: **domínio 3, Quiz conectado ao Claude.** É o
+  mais simples de especificar bem no primeiro esqueleto e funciona pra qualquer nível de
+  experiência. Ninguém fica sem projeto.
 
-No minuto 10 a escolha trava. Mudar depois é caro (não impossível, mas você perde
-trabalho) — decida com o critério, não com a paralisia.
+Mudar de domínio depois é caro (não impossível, mas você perde trabalho) — decida com o
+critério, não com a paralisia.
+
+**2. Gere o esqueleto inicial.** Crie uma pasta nova **fora do fork do curso** (é o seu
+repositório de projeto — separado do material das aulas) e peça ao agente, com um prompt
+específico usando os três controles do Lab 1 (especificidade + exemplo + formato de
+saída — modelo no checkpoint 1 da aula 4), o esqueleto funcional do projeto.
+
+**Critério de pronto:** existe uma pasta com **pelo menos 1 arquivo funcional gerado
+pelo agente** — não precisa estar completo, precisa existir. Revisar, colocar no GitHub,
+escrever README e CLAUDE.md é o trabalho da aula 4.
+
+---
+
+## AULA 4 — Lab guiado paralelo: o projeto continua
+
+Formato: a facilitadora constrói o dela na tela, você constrói a sua em paralelo, mesmo
+ritmo. Checkpoint a cada ~20 minutos — a facilitadora não avança pro próximo até a
+maioria confirmar o atual. **Não tem conteúdo novo nesta aula.** Se travar em algo
+conceitual, é hora de voltar pra aula 3 ou pra Alura, não de a facilitadora explicar de
+novo do zero.
+
+Você chega aqui com domínio escolhido e um esqueleto inicial (ato final da aula 3).
+**Faltou à aula 3 ou ficou sem esqueleto?** Os primeiros 10 minutos são seus: escolha um
+domínio do catálogo (seção "Ato final" acima) e rode o prompt do checkpoint 1. Depois
+você segue no mesmo ritmo de todo mundo.
 
 ### O contrato mínimo do esqueleto
 
-Toda semana daqui pra frente vai construir em cima do que você gerar hoje. Pra isso
-funcionar, o esqueleto que sai da aula 4 **tem** que ter, sem exceção de domínio:
+Toda semana daqui pra frente vai construir em cima do que você gerar nesta semana. Pra
+isso funcionar, o esqueleto que sai da aula 4 **tem** que ter, sem exceção de domínio:
 
 - [ ] **Git inicializado**, com pelo menos 2 commits (não "um commit com tudo gerado de
       uma vez" — isso não mostra revisão, mostra vibe coding)
@@ -157,14 +187,24 @@ funcionar, o esqueleto que sai da aula 4 **tem** que ter, sem exceção de domí
 
 Se algum item não existir no seu repo no fim da aula, a atividade não está pronta pra
 entrega — não é sobre estar bonito, é sobre estar completo o suficiente pra semana 3
-construir em cima.
+construir em cima. O checklist formal do que conta na nota está na `ENTREGAVEL.md` —
+este contrato é o que as próximas semanas assumem que existe quando começam.
 
-### Checkpoint 1 (20 min) — Especifique o esqueleto pro agente
+### Checkpoint 1 (20 min) — Revise o que nasceu na aula 3
 
-Isso **não é** um `npx create-x`. Você não vai pedir pra facilitadora te dar um comando
-que gera tudo sozinho. Você vai escrever a especificação, do jeito que praticou no Lab 1
-da aula 3 (especificidade + exemplo + formato de saída), e o agente vai propor um plano
-**antes** de criar qualquer arquivo.
+O esqueleto inicial já existe — você gerou no ato final da aula 3, correndo contra os 10
+minutos. Agora, com calma:
+
+1. Abra a pasta, leia a árvore de arquivos e os arquivos principais.
+2. Instale as dependências e rode o comando de teste (pergunte ao agente se não estiver
+   óbvio: "como eu instalo as dependências?" e "qual o comando de teste?").
+3. Anote o que parece errado, exagerado ou genérico demais — o checkpoint 2 é onde você
+   age nisso.
+
+**Faltou à aula 3 ou quer regerar do zero?** Isso **não é** um `npx create-x`. Você não
+vai pedir pra facilitadora te dar um comando que gera tudo sozinho. Você vai escrever a
+especificação, do jeito que praticou no Lab 1 da aula 3 (especificidade + exemplo +
+formato de saída), e o agente vai propor um plano **antes** de criar qualquer arquivo.
 
 Modelo de prompt (adapte pro seu domínio — não copie a frase entre `< >`):
 
@@ -189,10 +229,10 @@ Rode. Leia o plano que voltou. **Não confirme automaticamente.**
 ### Checkpoint 2 (20 min) — Leia, rejeite, ajuste
 
 Este é o ponto em que **o agente não resolve sozinho e ninguém resolve por você**: ele
-não sabe se o plano que gerou serve pro problema real que você descreveu — ele otimiza
-pra "parece um projeto bem estruturado", não pra "resolve o que a pessoa do seu domínio
-precisa". Antes de deixar ele criar os arquivos, responda por escrito (num rascunho, não
-precisa ser formal):
+não sabe se o que gerou serve pro problema real que você descreveu — ele otimiza pra
+"parece um projeto bem estruturado", não pra "resolve o que a pessoa do seu domínio
+precisa". Antes de aceitar o que existe (ou de deixar ele criar os arquivos, se você
+regerou), responda por escrito (num rascunho, não precisa ser formal):
 
 - Essa estrutura de pastas faz sentido pro MEU problema, ou é genérica demais /
   específica demais pra outra coisa?
@@ -202,7 +242,7 @@ precisa ser formal):
   disfarçado?
 
 Ajuste o prompt e peça de novo se a resposta for "não" em qualquer um desses pontos.
-Quando o plano fizer sentido, deixe ele criar os arquivos. Depois:
+Quando a estrutura fizer sentido, deixe ele criar (ou corrigir) os arquivos. Depois:
 
 ```bash
 # o comando exato depende da stack que o agente escolheu — pergunte a ele
@@ -255,12 +295,13 @@ Apague os comentários HTML e os `TODO`s restantes quando terminar.
 3. Peça uma tarefa pequena que dependa de uma das suas regras (por exemplo, a regra de
    teste) e confirme que ele seguiu sem você lembrar.
 4. Escreva o **parágrafo pro dono do negócio** (3 a 5 frases, sem jargão — veja o modelo
-   pro domínio 1 na `ENTREGAVEL.md`). Escreva pensando numa pessoa específica que você
-   conhece que não é da área — se ela não entenderia uma frase, reescreve.
+   pro domínio 1 na `ENTREGAVEL.md`) **e adicione no `README.md`**. Escreva pensando
+   numa pessoa específica que você conhece que não é da área — se ela não entenderia uma
+   frase, reescreve.
 5. `git add -A && git commit -m "CLAUDE.md + parágrafo pro dono do negócio"` e
    `git push`.
 
-### Fechamento (5 min)
+### Fechamento (10 min)
 
 Confira o contrato mínimo do esqueleto uma última vez. O que faltar vira o primeiro item
 da sua lista pessoal antes do prazo da `ENTREGAVEL.md`.
