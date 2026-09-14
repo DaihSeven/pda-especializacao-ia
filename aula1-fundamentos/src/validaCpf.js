@@ -6,10 +6,12 @@
 export function validaCpf(cpf) {
   if (typeof cpf !== 'string') return false;
 
-  const digitos = cpf.replace(/\D/g, '');
-  if (digitos.length !== 11) return false;
+  if (!/^\d{3}\.?\d{3}\.?\d{3}-?\d{2}$/.test(cpf)) return false;
 
-  const nums = digitos.split('').map((d) => parseInt(d));
+  const digitos = cpf.replace(/\D/g, '');
+  if (/^(\d)\1{10}$/.test(digitos)) return false;
+
+  const nums = digitos.split('').map((d) => parseInt(d, 10));
 
   const calcDigito = (base) => {
     let soma = 0;
