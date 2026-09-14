@@ -98,15 +98,16 @@ Escreva uma função JavaScript validaCpf(cpf) que retorna true ou false. Só o 
 Tabela pra anotar:
 
 | rodada | T=0: o que mudou vs. a anterior | T=1.5/2: o que mudou vs. a anterior |
-|--------|----------------------------------|--------------------------------------|
-| 1      | —                                | —                                    |
-| 2      |                                  |                                      |
-| 3      |                                  |                                      |
-| 4      |                                  |                                      |
-| 5      |                                  |                                      |
+| Rodada | T=0 (Temperatura Baixa) | T=1.5 / 2 (Temperatura Alta) |
+| :--- | :--- | :--- |
+| **1** | Código funcional usando `cpf = cpf.replace(/\D/g, '')`. Variáveis e loops padrão. | Código básico funcional, estrutura similar à rodada 1 de T=0. |
+| **2** | Idêntico à Rodada 1 (100% de consistência em sintaxe e variáveis). | Mudança nos nomes de variáveis (ex: `soma`/`digito`) e sanitização alternativa. |
+| **3** | Idêntico à Rodada 1 (nenhuma variação identificada). | Mudança na estrutura: uso de `.reduce()` ou funções auxiliares para os dígitos. |
+| **4** | Ligeira variação de sanitização: inclusão de `String(cpf)` em `cpf = String(cpf).replace(/\D/g, '')`. | Mudança na abordagem de validação e estilo de código diferente das rodadas anteriores. |
+| **5** | Idêntico à Rodada 4 (mantida a conversão para `String(cpf)`). | Mudança expressiva na lógica/estilo, com risco elevado de pequenos erros de sintaxe ou borda. |
 
-**Pergunta de fechamento:** se o mesmo prompt dá respostas diferentes, o que isso muda em como você
-*testa* código gerado por IA?
+**Pergunta de fechamento:** se o mesmo prompt dá respostas diferentes, o que isso muda em como você *testa* código gerado por IA?
+- Não podemos tratar a resposta da IA como determinística nem presumir que uma geração correta garante que a próxima também estará correta. Código gerado por LLMs deve ser tratado como uma sugestão inicial e precisa passar obrigatoriamente por validação através de testes unitários automatizados, revisão de código (code review) e execução real em ambiente controlado antes de ser integrado ao projeto.
 
 ---
 
