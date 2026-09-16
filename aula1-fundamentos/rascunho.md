@@ -240,39 +240,190 @@ aplicável, ex: assert.equal(actual, expected, message?), aage?)) aceita string,
 
 ※ recap: Você pediu para consultar via context7 as assinaturas atuais de describe, test e assert do node:test/node:assert, e isso já foi entregue. Sem próxima ação pendente, a menos que queira aplicar algo no código. (disable recaps in /config)
 
-# REVIEW — Aula 1
+# fetchUsuario
 
-## O que eu pedi
 
-Corrija src/validaCpf.js para rejeitar CPFs com todos os dígitos iguais
-(ex.: 111.111.111-11) e strings com letras no meio.
-npm test tem que passar.
-Não edite os arquivos em tests/.
+● Update(src\fetchUsuario.js)
+Added 11 lines, removed 2 lines
+// A função recebe um `fetchFn` pra facilitar teste (injeção de dependência).
+> Quero resolver o Desafio 3 em src/fetchUsuario.js.
 
-## O que o agente fez
+  Antes de editar qualquer arquivo:
 
-O agente analisou `src/validaCpf.js`, alterou somente esse arquivo
-e executou os testes.
+  1. Leia src/fetchUsuario.js e tests/fetchUsuario.test.js.
+  2. Identifique exatamente por que os testes estão falhando.
+  3. Explique quais comportamentos os testes esperam.
+  4. Proponha uma abordagem para corrigir o problema.
 
-Foram adicionadas duas validações:
-- validação do formato antes de remover caracteres;
-- rejeição de CPFs com todos os 11 dígitos iguais.
+  Restrições:
+  - altere somente src/fetchUsuario.js;
+  - não altere nenhum arquivo dentro de tests/;
+  - preserve o comportamento que já está funcionando;
+  - não adicione dependências sem necessidade;
+  - a validação do ID deve acontecer antes da chamada à API;
+  - o tratamento da resposta deve funcionar para HTTP 404;
+  - a função não deve quebrar quando a API retornar campos ausentes;
+  - ao final, npm test deve passar.
 
-Os 7 testes de `validaCpf` passaram. Os 3 testes restantes
-pertencem a `fetchUsuario`, que não fazia parte desta tarefa.
+  Não faça alterações ainda. Apenas analise e proponha a solução.
 
-## O que eu aceitei e por quê
+  Read 2 files
 
-[...]
+Vou rodar os testes rapidamente para confirmar o estado atual, só para embasar a análise (sem editar nada).
 
-## O que eu rejeitei ou mudei e por quê
+  Ran 1 shell command
+Diagnóstico                                                                                                                                   
+src/fetchUsuario.js hoje (linhas 6-15) não valida id e assume que dados.nome/dados.email sempre existem, sem checar resposta.ok. Isso causa 3 falhas:
+                                                                                                                           Teste 404 (tests/fetchUsuario.test.js:19) — a API retor sem nome/email. O código quebra em dados.nome.trim() comTypeError, então o assert.rejects(..., /404/) falha porque a mensagem do erro não contém "404" (o código nunca verifica resposta.status/resposta.ok).
+2. Teste "campos faltando" (linha 24) — mesma causa raiz: { id: 8 } sem nome/email gera TypeError em .trim()/.toLowerCase() em vez de retornar { id: 8, nome: '', email: '' }.
+3. Teste "id inválido" (linha 29) — a função não valida id antes de chamar fetchFn. Com id = -1, o teste passa uma função fake que não retorna nada (undefined), e o código quebra em resposta.json() operties of undefined (reading 'json'), em vez de rejeitarcom uma mensagem contendo "id" sem chamar fetchFn.
 
-[...]
+O teste 200 (linha 13) já passa e deve continuar passando.
 
-## Onde ele chutou / alucinou / fez mais do que pedi
+Comportamentos esperados pelos testes
 
-[...]
+- 200 válido: retorna { id, nome: nome.trim(), email: email.toLowerCase() } (comportamento atual, preservar).
+- 404: deve rejeitar (throw/reject) com uma mensagem que car acessar dados.nome/dados.email.
+- Campos ausentes com 200 OK: não deve lançar exceção; nome e email ausentes devem virar '' (string vazia), não undefined.
+- ID inválido (ex.: -1): deve rejeitar com mensagem contentes de chamar fetchFn — o teste verifica chamou === false.
 
-## O que eu colocaria no CLAUDE.md para isso não acontecer de novo
+Abordagem proposta
 
-[...]
+1. No início da função, validar id: deve ser um número intnteger(id) && id > 0); se inválido, throw new Error('idinválido: ...') antes de qualquer chamada a fetchFn.
+2. Após await fetchFn(...), checar resposta.ok (ou respostew Error(Falha ao buscar usuário (HTTP ${resposta.status})) — mensagem contendo o código de status, cobrindo o caso 404.
+3. Ao montar o retorno, usar valores padrão para campos au '' e dados.email?.toLowerCase() ?? '' (ou equivalente com|| ''), evitando TypeError quando nome/email não vierem na resposta.
+
+Isso mantém o comportamento do caso 200 já validado, cobre 404, campos ausentes e validação de ID antes da chamada — sem novas dependências e sem
+tocar em tests/.
+
+Posso prosseguir com a edição em src/fetchUsuario.js?
+
+✻ Baked for 30s · done 18:11
+
+> A abordagem está correta.
+
+  Pode implementar a correção em src/fetchUsuario.js seguindropostos:
+  1. validar o id antes de chamar fetchFn;
+  2. tratar respostas HTTP não-OK, incluindo 404;
+  3. tratar nome e email ausentes sem lançar TypeError.
+
+  Mantenha o caso 200 válido funcionando como está.
+  Não altere nenhum arquivo em tests/.
+  Não adicione dependências.
+
+  Depois da implementação, execute npm test e mostre o resultado.
+
+● Update(src\fetchUsuario.js)
+Added 11 lines, removed 2 lines
+// A função recebe um `fetchFn` pra facilitar teste (injeção de dependência).
+
+export async function fetchUsuario(id, fetchFn = fetch) {
+  if (!Number.isInteger(id) || id <= 0) {
+    throw new Error(`id inválido: ${id}`);
+  }
+
+  const resposta = await fetchFn(`https://api.exem
+
+  if (!resposta.ok) {
+    throw new Error(`Falha ao buscar usuário (HTTP ${resposta.status})`);
+  }
+
+  const dados = await resposta.json();
+
+  return {
+    id: dados.id,
+    nome: dados.nome.trim(),
+    email: dados.email.toLowerCase(),
+    nome: dados.nome?.trim() ?? '',
+    email: dados.email?.toLowerCase() ?? '',
+  };
+}
+
+  Ran 1 shell command
+
+Todos os 4 testes de fetchUsuario passam, e o restante da suíte (formataPreco, validaCpf, etc.) segue passando normalmente. Correção implementada
+apenas em src/fetchUsuario.js, sem tocar em tests/ nem adi
+
+✻ Churned for 15s · done 18:13
+
+※ recap: Working on aula1-fundamentos: fixed fetchUsuario.js and avoid crashing on missing fields. Tests all pass now;next step is to review the diff with you before wrapping up. (disable recaps in /config)
+
+> Agora mostre o conteúdo final completo de src/fetchUsuario.js e o diff em relação à versão anterior.
+
+  Não faça nenhuma alteração.
+
+  Quero verificar especialmente:
+  - a validação do id;
+  - a chamada do fetchFn;
+  - o tratamento de resposta HTTP não-OK;
+  - o tratamento de nome e email ausentes;
+  - se não existem propriedades duplicadas no objeto retorna
+
+  Read 1 file, ran 1 shell command
+
+Conteúdo final de src/fetchUsuario.js
+
+// Gerado por IA. Colado sem ler. (ATIVIDADE — desafio 3)
+//
+// Busca um usuário por id numa API e devolve { id, nome,
+// A função recebe um `fetchFn` pra facilitar teste (injeção de dependência).
+
+export async function fetchUsuario(id, fetchFn = fetch) {
+  if (!Number.isInteger(id) || id <= 0) {
+    throw new Error(`id inválido: ${id}`);
+  }
+
+  const resposta = await fetchFn(`https://api.exemplo.com/
+
+  if (!resposta.ok) {
+    throw new Error(`Falha ao buscar usuário (HTTP ${resposta.status})`);
+  }
+
+  const dados = await resposta.json();
+
+  return {
+    id: dados.id,
+    nome: dados.nome?.trim() ?? '',
+    email: dados.email?.toLowerCase() ?? '',
+  };
+}
+
+Diff em relação à versão anterior
+
+ export async function fetchUsuario(id, fetchFn = fetch) {
++  if (!Number.isInteger(id) || id <= 0) {
++    throw new Error(`id inválido: ${id}`);
++  }
++
+   const resposta = await fetchFn(`https://api.exemplo.com
++
++  if (!resposta.ok) {
++    throw new Error(`Falha ao buscar usuário (HTTP ${resposta.status})`);
++  }
++
+   const dados = await resposta.json();
+
+   return {
+     id: dados.id,
+-    nome: dados.nome.trim(),
+-    email: dados.email.toLowerCase(),
++    nome: dados.nome?.trim() ?? '',
++    email: dados.email?.toLowerCase() ?? '',
+   };
+ }
+
+Verificação dos pontos pedidos
+
+- Validação do id: linhas 7-9, antes de qualquer chamada — Number.isInteger(id) && id > 0, senão throw. ✔️
+- Chamada do fetchFn: linha 11, única chamada, só ocorre a ✔️
+- Tratamento de resposta HTTP não-OK: linhas 13-15, checa resposta.ok antes de ler o corpo; mensagem inclui resposta.status (cobre 404 e qualquer
+  outro não-OK). ✔️
+- Nome/email ausentes: linhas 21-22, usam optional chaining (?.) + nullish coalescing (??), retornando '' quando o campo não existe, sem
+  TypeError. ✔️
+- Propriedades duplicadas no retorno: objeto tem exatamente id, nome, email — uma ocorrência de cada, sem duplicatas. ✔️
+
+Nenhuma alteração foi feita nesta resposta; apenas leitura e diff.
+
+✻ Churned for 12s · done 18:17
+
+※ recap: Fixed the Desafio 3 bug in src/fetchUsuario.js (id validation, 404 handling, missing fields) and confirmed all tests pass; next step is up to you, let me know what to tackle next. (disable recaps i
