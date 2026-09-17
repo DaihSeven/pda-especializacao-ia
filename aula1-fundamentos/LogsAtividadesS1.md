@@ -389,6 +389,7 @@ export async function fetchUsuario(id, fetchFn = fetch) {
 }
 
 Diff em relação à versão anterior
+```
 
  export async function fetchUsuario(id, fetchFn = fetch) {
 +  if (!Number.isInteger(id) || id <= 0) {
@@ -411,7 +412,7 @@ Diff em relação à versão anterior
 +    email: dados.email?.toLowerCase() ?? '',
    };
  }
-
+```
 Verificação dos pontos pedidos
 
 - Validação do id: linhas 7-9, antes de qualquer chamada — Number.isInteger(id) && id > 0, senão throw. ✔️
