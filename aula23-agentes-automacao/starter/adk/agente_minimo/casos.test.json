@@ -1,0 +1,34 @@
+{
+  "_leia_antes_de_expandir": "Formato ILUSTRATIVO. O adk.dev/evaluate documenta eval_set_id + eval_cases com conversation/final_response/intermediate_data, mas o schema completo de cada campo não foi verificado campo a campo nesta sessão — antes de escalar isso pra valer, abra https://adk.dev/evaluate/ e confira contra a versão instalada (`pip show google-adk`). Isso é o mesmo cuidado de 'não escreva de memória' que vale pro resto do curso.",
+  "eval_set_id": "classificador_pda_casos",
+  "eval_cases": [
+    {
+      "eval_id": "orcamento_urgente",
+      "conversation": [
+        {
+          "invocation_id": "inv-1",
+          "user_content": {
+            "parts": [{ "text": "Preciso de um site pra minha oficina até sexta, quanto custa?" }]
+          },
+          "final_response": {
+            "parts": [{ "text": "classificação esperada: urgencia=alta, categoria=orcamento" }]
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "duvida_simples",
+      "conversation": [
+        {
+          "invocation_id": "inv-2",
+          "user_content": {
+            "parts": [{ "text": "Vocês atendem aos sábados?" }]
+          },
+          "final_response": {
+            "parts": [{ "text": "classificação esperada: urgencia=baixa, categoria=duvida" }]
+          }
+        }
+      ]
+    }
+  ]
+}

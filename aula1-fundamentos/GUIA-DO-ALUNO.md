@@ -264,7 +264,7 @@ git push
 - [ ] `validaCpf` corrigida, `npm test` verde (os testes de `fetchUsuario` ainda falham — são o desafio 3), diff lido, commit feito
 
 Tem os 5? Tira o print do `/mcp` e do `/status`. Metade da sua entrega está pronta.
-A outra metade está em [`ATIVIDADE.md`](./ATIVIDADE.md).
+A outra metade está em [`ENTREGAVEL.md`](./ENTREGAVEL.md).
 
 ---
 

@@ -1,0 +1,9 @@
+{
+  "name": "speedrun-repo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Repo do speedrun cronometrado — Semana 10. Node puro, zero dependências.",
+  "scripts": {
+    "test": "node --test"
+  }
+}

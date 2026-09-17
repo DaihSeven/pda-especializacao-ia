@@ -1,0 +1,9 @@
+# Uma linha por achado (de qualquer origem). Preencha DEPOIS dos dois registros
+# acima já estarem commitados. achado_id é livre (A1, A2...).
+# quem_achou: humano | revisor-sinais-ia | revisor-seguranca-ia | multiplos
+# categoria: lint | teste | leitura | dominio | seguranca | escopo | outro
+# prioridade_final: bloqueia | nao-bloqueia | nice-to-have
+achado_id,descricao,quem_achou,categoria,prioridade_final,justificativa_se_nao_bloqueia,timestamp
+A1-exemplo,"console.log esquecido em src/perfis.js:19",humano,lint,bloqueia,,2026-09-13T10:05
+A2-exemplo,"pacote pt-acento-normalize-utils não existe no npm",revisor-seguranca-ia,seguranca,bloqueia,,2026-09-13T10:22
+A3-exemplo,"variaveis renomeadas em exportarCsv.js sem necessidade",humano,escopo,nao-bloqueia,"cosmetico, nao muda comportamento, mas preferia PR separado",2026-09-13T10:15

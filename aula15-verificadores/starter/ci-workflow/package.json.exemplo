@@ -1,0 +1,16 @@
+{
+  "name": "seu-projeto",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test",
+    "verify": "npm run lint && npm run typecheck && npm run build && npm test"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "typescript": "^5.6.0"
+  }
+}

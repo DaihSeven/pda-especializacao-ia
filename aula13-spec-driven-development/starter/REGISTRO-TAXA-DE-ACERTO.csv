@@ -1,0 +1,6 @@
+# taxa_de_acerto_primeira_tentativa = (task_id distintos com tentativa_numero=1 E resultado=passou) / (task_id distintos tentados)
+# preencha as linhas abaixo e apague esta e a linha de exemplo antes de entregar
+task_id,titulo,gate_comando,tentativa_numero,resultado,causa_se_falhou,observacao,timestamp
+T001-exemplo,"exemplo: endpoint de filtro por habilidade","npm test -- perfis.filtro.test.js",1,falhou,spec_ambigua,"gate não especificava acento/maiuscula, agente tratou 'React' != 'react'",2026-09-13T10:05
+T001-exemplo,"exemplo: endpoint de filtro por habilidade","npm test -- perfis.filtro.test.js",2,falhou,spec_ambigua,"segunda tentativa ainda quebrava com acento, reescrevi o gate","2026-09-13T10:22"
+T001b-exemplo,"exemplo (reescrita): filtro case+acento-insensitive explicito no gate","npm test -- perfis.filtro.test.js",1,passou,,"gate reescrito especificando normalização de acento; passou de primeira nessa versão",2026-09-13T10:31

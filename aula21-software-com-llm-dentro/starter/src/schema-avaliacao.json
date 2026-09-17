@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "nota": { "type": "integer", "minimum": 0, "maximum": 10 },
+    "aprovado": { "type": "boolean" },
+    "justificativa": { "type": "string", "minLength": 10 }
+  },
+  "required": ["nota", "aprovado", "justificativa"],
+  "additionalProperties": false
+}

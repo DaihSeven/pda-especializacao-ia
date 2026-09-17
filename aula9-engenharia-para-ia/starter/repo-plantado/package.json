@@ -1,0 +1,10 @@
+{
+  "name": "pda-ia-repo-plantado-diagnostico",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Repo plantado de reserva — Semana 5. Use só se seu MCP server da semana 4 não estiver rodando.",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test"
+  }
+}

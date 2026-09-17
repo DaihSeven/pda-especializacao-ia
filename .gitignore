@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+.env
+.env.local
+.mcp.json
+dist/
+build/
+*.log
+.venv/
+__pycache__/
+*ROTEIRO-FACILITADORA.md

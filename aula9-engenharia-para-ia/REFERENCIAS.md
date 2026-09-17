@@ -1,0 +1,35 @@
+# Referências verificadas — Semana 5: Engenharia de software para desenvolvimento com IA
+
+Todas abertas com WebFetch nesta sessão (13/09/2026). Nenhum link foi composto por
+analogia. Mínimo exigido: 8. Entregues: 11.
+
+| # | URL | O que é | Status | Onde entra |
+|---|---|---|---|---|
+| 1 | <https://www.gitclear.com/ai_assistant_code_quality_2025_research> | GitClear, "AI Copilot Code Quality: 2025 Data Suggests 4x Growth in Code Clones" — 211 milhões de linhas analisadas (2020–2024, Google/Microsoft/Meta/C-Corps). Duplicação "copy/pasted" de 8,3% (2020) pra 12,3% (2024); refatoração caiu de 25% das linhas alteradas (2021) pra <10% (2024) | ✅ Verificado — dados quantitativos lidos por completo | Métrica-base da Categoria 2 do checklist (`starter/checklist-sinais-codigo-ia.md`); slide 6; PACOTE.md |
+| 2 | <https://www.gitclear.com/the_ai_code_quality_maintainability_gap> | GitClear, "The Maintainability Gap: 2026 AI Code Quality Research" — 623 milhões de mudanças (2023–2026). Duplicação de blocos +81%, construtos que mascaram erro +47%, churn de 2 semanas +15%, chamadas de função entre arquivos -35%, refatoração -70%. Proporção duplicação:refatoração passou de 1:2 (2022) pra 5:1 (hoje) | ✅ Verificado — relatório completo, números conferidos | Dado central de "Abstraction Bloat" (checklist Categorias 2 e 3); slide 6-7; PACOTE.md (seção de literatura) |
+| 3 | <https://arxiv.org/html/2605.02741v1> | Paper acadêmico "AI-Generated Smells: An Analysis of Code and Architecture in LLM- and Agent-Driven Development" — ~450 soluções (5 LLMs × CodeContest) + repositórios multi-agente (MetaGPT). Nomeia "God Class Syndrome", "Modular Mirage", "Reasoning-Complexity Paradox" (correlação ρ=0,94 entre linhas de código e smells arquiteturais) | ✅ Verificado — metodologia e taxonomia lidas por completo | Nomes usados literalmente no checklist (1.1 God Class, 1.2 Modular Mirage, justificativa da 1.5 Reasoning-Complexity Paradox); slide 7 |
+| 4 | <https://www.thoughtworks.com/en-us/radar/techniques/complacency-with-ai-generated-code> | Thoughtworks Technology Radar — entrada nomeada "Complacency with AI-generated code": cita o próprio dado da GitClear, cita pesquisa da Microsoft sobre confiança gerada por IA "at the expense of critical thinking", nomeia "vibe coding" como sintoma, recomenda TDD/análise estática/instruções curadas de equipe | ✅ Verificado — texto completo | Ancora o tema num consenso de mercado (não é só uma leitura isolada); slide 5; PACOTE.md (honestidade sobre força da evidência) |
+| 5 | <https://martinfowler.com/bliki/BoundedContext.html> | Martin Fowler, bliki "Bounded Context" — definição canônica: unificação total do modelo de domínio não é viável em sistema grande; cada contexto tem seu próprio modelo consistente. Exemplo clássico: "meter" significando coisas diferentes em departamentos diferentes de uma companhia elétrica | ✅ Verificado — texto completo | Base do vocabulário de DDD estratégico; slide 9-10; ENTREGAVEL.md; excalidraw |
+| 6 | <https://martinfowler.com/bliki/UbiquitousLanguage.html> | Martin Fowler, bliki "Ubiquitous Language" — termo cunhado por Eric Evans: linguagem rigorosa e comum entre devs e especialistas de domínio, construída em cima do modelo, que evolui junto com o entendimento da equipe | ✅ Verificado — texto completo | Base do vocabulário de DDD estratégico; conecta diretamente com o sinal 1.4 do checklist (nomeação genérica); slide 9 |
+| 7 | <https://www.alura.com.br/curso-online-ddd-fundamentos-design-orientado-dominio> | Curso Alura "DDD: fundamentos do design orientado a domínio" (20h, 72 atividades, com Vinícius Albano) — cobre tanto estratégico ("do domínio ao contexto", Event Storming, Domain Storytelling) quanto tático (entidades, agregados, eventos de domínio) | ✅ Verificado — ementa confirmada, cobertura estratégica × tática distinguida | Mapeamento Alura (PACOTE.md) — só os módulos estratégicos entram no pré-requisito; o tático é citado como "existe, não é isso que resolve hoje" |
+| 8 | <https://www.alura.com.br/curso-online-qualidade-codigo-code-review> | Curso Alura "Qualidade de código: estratégia de Code Review, métricas e governança" (12h, Daniel Loureiro Cintra) — módulos: fundamentos de qualidade, refatoração manual, code review profissional, SonarCloud, "Inteligência Artificial no fluxo", governança | ✅ Verificado — ementa e módulos confirmados | Mapeamento Alura (PACOTE.md) — sustenta o vocabulário geral de code smell/duplicação/complexidade que o síncrono não reexplica do zero |
+| 9 | <https://code.claude.com/docs/en/memory> | Doc oficial do Claude Code — seção "Organize rules with `.claude/rules/`" e "Path-specific rules": frontmatter `paths` com glob patterns escopa uma regra a diretórios/tipos de arquivo específicos, carregada só quando Claude lê um arquivo que casa com o padrão | ✅ Verificado — página completa lida, sintaxe exata conferida | Ponte prática entre bounded context e `.claude/rules/`, citada na aula 1 (teoria) e no bônus do board Excalidraw |
+| 10 | <https://docs.excalidraw.com/docs/codebase/json-schema> | Documentação oficial do Excalidraw — schema JSON: campos top-level (`type`, `version`, `source`, `elements`, `appState`, `files`) e campos de elemento | ✅ Verificado | Base de construção de `excalidraw/board-bounded-contexts.excalidraw` (combinado com `_EXCALIDRAW.md`, que é mais específico e prevaleceu nos detalhes de sintaxe) |
+| 11 | <https://dora.dev/dora-report-2025/> | Relatório DORA 2025 (Google Cloud/DX) — conclusão central: "AI's primary role is as an amplifier, magnifying an organization's existing strengths and weaknesses" | ✅ Verificado — mas **fraco pro que este pacote precisa**: não traz métrica quantitativa específica de qualidade de código/abstração gerada por IA, só a moldura geral de "amplificador". Citado com essa ressalva explícita, não como dado duro | Uma frase em PACOTE.md, na seção "o que a literatura NÃO tem" |
+
+## O que eu procurei e decidi não usar
+
+- **Um número único e citável pra "Abstraction Bloat" como métrica formalizada** não existe
+  publicado — nem GitClear, nem o paper do arXiv, nem o Radar do Thoughtworks propõem uma
+  métrica com esse nome. O nome "Abstraction Bloat" é cunhado por este curso; os dados
+  citados (#1, #2, #3) são os sinais mais próximos, indiretos, que sustentam por que o
+  padrão existe — não uma prova de que "Abstraction Bloat" é medido em X%. Isso está
+  registrado explicitamente em `starter/checklist-sinais-codigo-ia.md`, seção final.
+- **DORA 2025** (#11) foi pesquisado especificamente atrás de dado de qualidade/débito
+  técnico e não trouxe número aplicável — fica citado, mas com a ressalva de fraqueza
+  registrada, como o `_BRIEF.md` pede.
+- Vários posts de blog agregador sobre "AI code bloat" (Medium, dev.to, listicles) apareceram
+  nas buscas e foram preteridos em favor das fontes primárias acima — o paper do arXiv e os
+  dois relatórios da GitClear já cobrem o mesmo terreno com metodologia declarada.
+- Não usei nenhuma fonte sobre DDD tático (agregados, entidades, repositórios) além do
+  necessário pra decidir onde ele NÃO entra — a exclusão é deliberada, não desconhecimento.

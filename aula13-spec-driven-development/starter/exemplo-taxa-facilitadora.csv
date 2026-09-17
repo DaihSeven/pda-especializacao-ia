@@ -1,0 +1,15 @@
+# Taxa de acerto de primeira tentativa da facilitadora, preparando a demo desta semana.
+# Mostrada em aula ANTES de qualquer aluno começar o Lab 1 (ver ROTEIRO-FACILITADORA.md).
+# taxa = 5 passou-de-primeira (T001b, T003, T004b, T005, T007) / 9 task_ids distintos tentados = 55.6%
+task_id,titulo,gate_comando,tentativa_numero,resultado,causa_se_falhou,observacao,timestamp
+T001,"gerar relatório html sem sanitização","npm run demo:relatorio -- --fixture issue-42",1,falhou,task_nao_atomica,"pedi 'gerar relatório bonito', não dizia o que validar; sem gate real, só rodei e olhei",2026-09-10T09:00
+T001b,"relatório html escapando <script> do texto de entrada","npm test -- relatorio.escape.test.js",1,passou,,"reescrevi como task com gate: input malicioso fixo, saída não pode conter <script> executável",2026-09-10T09:20
+T002,"tasks.md do projeto exemplo via /speckit.tasks","(inspeção manual do tasks.md gerado)",1,falhou,gate_mal_escrito,"'inspeção manual' não é gate, é opinião - não deveria ter contado essa tentativa como task",2026-09-10T09:40
+T003,"3 tasks com gate reescritas a partir do tasks.md","revisão cruzada com o checklist da semana 5",1,passou,,"as 3 reescritas já nasceram com comando de gate explícito",2026-09-10T10:05
+T004,"endpoint de busca por habilidade (fixture do domínio 1)","npm test -- perfis.filtro.test.js",1,falhou,spec_ambigua,"mesmo erro que o exemplo do aluno: acento/maiuscula não especificados",2026-09-10T10:30
+T004,"endpoint de busca por habilidade (fixture do domínio 1)","npm test -- perfis.filtro.test.js",2,falhou,spec_ambigua,"ajustei só o prompt sem mudar o gate por engano - continua contando como falha da T004",2026-09-10T10:42
+T004b,"endpoint de busca, gate reescrito com normalização explícita","npm test -- perfis.filtro.test.js",1,passou,,"gate agora especifica normalização de acento e case; passou de primeira",2026-09-10T10:55
+T005,"conversor de moeda simulado (fixture supply-chain, reaproveitado da semana 4)","npm test -- conversor.valor.test.js",1,passou,,"gate simples, entrada/saída numérica fixa - task já nasceu atômica",2026-09-10T11:10
+T006,"skill de revisão sinaliza uso de var","npm test -- revisor.var-check.test.js",1,falhou,erro_agente,"agente entendeu certo, esqueceu de checar arquivo sem nenhum var (falso positivo)",2026-09-10T11:30
+T006,"skill de revisão sinaliza uso de var","npm test -- revisor.var-check.test.js",2,passou,,"segunda tentativa, mesma task/gate, sem edição - corrigiu sozinho o falso positivo",2026-09-10T11:38
+T007,"gerador de pergunta do quiz com fallback de schema","npm test -- quiz.gerador.test.js",1,passou,,"gate já cobria o caso de resposta malformada desde a primeira escrita",2026-09-10T11:55

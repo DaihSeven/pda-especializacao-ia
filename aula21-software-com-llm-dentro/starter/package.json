@@ -1,0 +1,18 @@
+{
+  "name": "aula21-software-com-llm-dentro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Starter da Semana 11 (PDA) — API com streaming, system prompt, tool calling e structured output, dentro de um loop determinístico.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "evals": "node evals/runner.js",
+    "checar-chave": "node src/teste-chave.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.0"
+  }
+}

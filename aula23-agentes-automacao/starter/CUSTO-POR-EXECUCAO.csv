@@ -1,0 +1,5 @@
+execucao_id,ferramenta,modelo,tokens_entrada,tokens_saida,preco_entrada_usd_por_mtok,preco_saida_usd_por_mtok,custo_execucao_usd,execucoes_estimadas_por_mes,custo_mensal_estimado_usd,cotacao_dolar_usada,custo_mensal_estimado_brl,preco_sugerido_ao_cliente_brl_mes,margem_brl_mes
+exemplo-01,n8n + Claude Haiku 4.5,claude-haiku-4-5-20251001,180,90,1,5,0.000630,300,0.189,5.40,1.02,49.90,48.88
+exemplo-02,n8n + Claude Sonnet 5 (se você trocasse o modelo),claude-sonnet-5,180,90,2,10,0.001260,300,0.378,5.40,2.04,49.90,47.86
+exemplo-03,ADK + Gemini (preencha depois de confirmar preço),gemini-flash-latest,,,,,PREENCHER_APOS_CONFIRMAR_PRECO,300,,5.40,,49.90,
+sua-automacao-01,,,,,,,,,,,,,

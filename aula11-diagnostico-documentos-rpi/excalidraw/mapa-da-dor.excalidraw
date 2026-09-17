@@ -1,0 +1,1341 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "pda",
+  "elements": [
+    {
+      "type": "text",
+      "id": "t1",
+      "x": 40,
+      "y": 20,
+      "width": 363.00000000000006,
+      "height": 37.5,
+      "text": "MAPA DA DOR — SEMANA 6",
+      "fontSize": 30,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "t2",
+      "x": 40,
+      "y": 62,
+      "width": 607.2,
+      "height": 20.0,
+      "text": "Diagnóstico de negócio antes da spec — Research do RPI, em Excalidraw",
+      "fontSize": 16,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "text",
+      "id": "t3",
+      "x": 40,
+      "y": 86,
+      "width": 816.2,
+      "height": 17.5,
+      "text": "Mecânica: RODÍZIO DO DIAGNÓSTICO — cada zona muda de dono ao longo da aula 2 (ver ROTEIRO-FACILITADORA.md)",
+      "fontSize": 14,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "r4",
+      "x": 40,
+      "y": 130,
+      "width": 460,
+      "height": 250,
+      "strokeColor": "#f59e0b",
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t5",
+      "x": 56,
+      "y": 140,
+      "width": 69.30000000000001,
+      "height": 22.5,
+      "text": "LEGENDA",
+      "fontSize": 18,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "rectangle",
+      "id": "r6",
+      "x": 56,
+      "y": 174,
+      "width": 26,
+      "height": 26,
+      "strokeColor": "#2563eb",
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t7",
+      "x": 92,
+      "y": 172,
+      "width": 82.5,
+      "height": 18.75,
+      "text": "QUEM SENTE",
+      "fontSize": 15,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "t8",
+      "x": 92,
+      "y": 192,
+      "width": 314.6,
+      "height": 16.25,
+      "text": "quem tem a dor — nome/papel, não \"o usuário\"",
+      "fontSize": 13,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "r9",
+      "x": 56,
+      "y": 220,
+      "width": 26,
+      "height": 26,
+      "strokeColor": "#c92a2a",
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t10",
+      "x": 92,
+      "y": 218,
+      "width": 66.0,
+      "height": 18.75,
+      "text": "ONDE DÓI",
+      "fontSize": 15,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "t11",
+      "x": 92,
+      "y": 238,
+      "width": 264.55,
+      "height": 16.25,
+      "text": "em que passo do processo isso aparece",
+      "fontSize": 13,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "r12",
+      "x": 56,
+      "y": 266,
+      "width": 26,
+      "height": 26,
+      "strokeColor": "#c2410c",
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t13",
+      "x": 92,
+      "y": 264,
+      "width": 82.5,
+      "height": 18.75,
+      "text": "CUSTO HOJE",
+      "fontSize": 15,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "t14",
+      "x": 92,
+      "y": 284,
+      "width": 328.90000000000003,
+      "height": 16.25,
+      "text": "tempo, dinheiro ou erro — hoje, sem o artefato",
+      "fontSize": 13,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "r15",
+      "x": 56,
+      "y": 312,
+      "width": 26,
+      "height": 26,
+      "strokeColor": "#15803d",
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t16",
+      "x": 92,
+      "y": 310,
+      "width": 173.25,
+      "height": 18.75,
+      "text": "O QUE O ARTEFATO MUDA",
+      "fontSize": 15,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "t17",
+      "x": 92,
+      "y": 330,
+      "width": 300.3,
+      "height": 16.25,
+      "text": "o que passa a ser verdade depois de pronto",
+      "fontSize": 13,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "text",
+      "id": "t18",
+      "x": 56,
+      "y": 364,
+      "width": 293.15000000000003,
+      "height": 16.25,
+      "text": "tracejado = zona vazia, preencher ao vivo",
+      "fontSize": 13,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "text",
+      "id": "t19",
+      "x": 56,
+      "y": 384,
+      "width": 369.6,
+      "height": 15.0,
+      "text": "(o minuto e quem preenche estão no rótulo de cada caixa)",
+      "fontSize": 12,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "text",
+      "id": "t20",
+      "x": 540,
+      "y": 100,
+      "width": 589.6,
+      "height": 20.0,
+      "text": "EXEMPLO PREENCHIDO — Domínio 1: Listagem de perfis de alunos da PDA",
+      "fontSize": 16,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "rectangle",
+      "id": "r21",
+      "x": 540,
+      "y": 130,
+      "width": 250,
+      "height": 150,
+      "strokeColor": "#2563eb",
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t22",
+      "x": 552,
+      "y": 140,
+      "width": 82.5,
+      "height": 18.75,
+      "text": "QUEM SENTE",
+      "fontSize": 15,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "t23",
+      "x": 552,
+      "y": 170,
+      "width": 474.37500000000006,
+      "height": 15.625,
+      "text": "Quem monta indicação de aluno pra vaga, toda semana, na equipe da PDA",
+      "fontSize": 12.5,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "rectangle",
+      "id": "r24",
+      "x": 830,
+      "y": 130,
+      "width": 250,
+      "height": 150,
+      "strokeColor": "#c92a2a",
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t25",
+      "x": 842,
+      "y": 140,
+      "width": 66.0,
+      "height": 18.75,
+      "text": "ONDE DÓI",
+      "fontSize": 15,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "t26",
+      "x": 842,
+      "y": 170,
+      "width": 556.875,
+      "height": 15.625,
+      "text": "Não existe filtro por habilidade — abre a planilha inteira e lê perfil por perfil",
+      "fontSize": 12.5,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "rectangle",
+      "id": "r27",
+      "x": 1120,
+      "y": 130,
+      "width": 250,
+      "height": 150,
+      "strokeColor": "#c2410c",
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t28",
+      "x": 1132,
+      "y": 140,
+      "width": 82.5,
+      "height": 18.75,
+      "text": "CUSTO HOJE",
+      "fontSize": 15,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "t29",
+      "x": 1132,
+      "y": 170,
+      "width": 495.00000000000006,
+      "height": 15.625,
+      "text": "~40 min por indicação, e às vezes esquece um aluno que serviria pra vaga",
+      "fontSize": 12.5,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "rectangle",
+      "id": "r30",
+      "x": 1410,
+      "y": 130,
+      "width": 250,
+      "height": 150,
+      "strokeColor": "#15803d",
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t31",
+      "x": 1422,
+      "y": 140,
+      "width": 82.5,
+      "height": 18.75,
+      "text": "O QUE MUDA",
+      "fontSize": 15,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "t32",
+      "x": 1422,
+      "y": 170,
+      "width": 625.625,
+      "height": 15.625,
+      "text": "Busca por habilidade devolve a lista certa em segundos, sem depender de quem lembra de quem",
+      "fontSize": 12.5,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "arrow",
+      "id": "a33",
+      "x": 790,
+      "y": 205.0,
+      "width": 40,
+      "height": 0.0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0.0
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "startBinding": {
+        "elementId": "r21",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "r24",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a34",
+      "x": 1080,
+      "y": 205.0,
+      "width": 40,
+      "height": 0.0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0.0
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "startBinding": {
+        "elementId": "r24",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "r27",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a35",
+      "x": 1370,
+      "y": 205.0,
+      "width": 40,
+      "height": 0.0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0.0
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "startBinding": {
+        "elementId": "r27",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "r30",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "id": "t36",
+      "x": 540,
+      "y": 340,
+      "width": 563.2,
+      "height": 20.0,
+      "text": "SEU DOMÍNIO AQUI — duplique esta linha 1x por grupo (Ctrl/Cmd+D)",
+      "fontSize": 16,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "rectangle",
+      "id": "r37",
+      "x": 540,
+      "y": 370,
+      "width": 250,
+      "height": 150,
+      "strokeColor": "#757575",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "text",
+      "id": "t38",
+      "x": 552,
+      "y": 380,
+      "width": 77.0,
+      "height": 17.5,
+      "text": "QUEM SENTE",
+      "fontSize": 14,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "text",
+      "id": "t39",
+      "x": 552,
+      "y": 404,
+      "width": 105.60000000000001,
+      "height": 30.0,
+      "text": "preenche sozinho\nmin 10-20",
+      "fontSize": 12,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "r40",
+      "x": 830,
+      "y": 370,
+      "width": 250,
+      "height": 150,
+      "strokeColor": "#757575",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "text",
+      "id": "t41",
+      "x": 842,
+      "y": 380,
+      "width": 61.60000000000001,
+      "height": 17.5,
+      "text": "ONDE DÓI",
+      "fontSize": 14,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "text",
+      "id": "t42",
+      "x": 842,
+      "y": 404,
+      "width": 118.80000000000001,
+      "height": 30.0,
+      "text": "preenche um COLEGA\nde fora, min 20-40",
+      "fontSize": 12,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "r43",
+      "x": 1120,
+      "y": 370,
+      "width": 250,
+      "height": 150,
+      "strokeColor": "#757575",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "text",
+      "id": "t44",
+      "x": 1132,
+      "y": 380,
+      "width": 77.0,
+      "height": 17.5,
+      "text": "CUSTO HOJE",
+      "fontSize": 14,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "text",
+      "id": "t45",
+      "x": 1132,
+      "y": 404,
+      "width": 138.60000000000002,
+      "height": 30.0,
+      "text": "preenche OUTRO colega\nmin 45-65",
+      "fontSize": 12,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "r46",
+      "x": 1410,
+      "y": 370,
+      "width": 250,
+      "height": 150,
+      "strokeColor": "#757575",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "text",
+      "id": "t47",
+      "x": 1422,
+      "y": 380,
+      "width": 77.0,
+      "height": 17.5,
+      "text": "O QUE MUDA",
+      "fontSize": 14,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "text",
+      "id": "t48",
+      "x": 1422,
+      "y": 404,
+      "width": 92.4,
+      "height": 30.0,
+      "text": "volta pro dono\nmin 70-95, já com a spec",
+      "fontSize": 12,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "arrow",
+      "id": "a49",
+      "x": 790,
+      "y": 445.0,
+      "width": 40,
+      "height": 0.0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0.0
+        ]
+      ],
+      "strokeColor": "#757575",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "strokeStyle": "dashed",
+      "startBinding": {
+        "elementId": "r37",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "r40",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a50",
+      "x": 1080,
+      "y": 445.0,
+      "width": 40,
+      "height": 0.0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0.0
+        ]
+      ],
+      "strokeColor": "#757575",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "strokeStyle": "dashed",
+      "startBinding": {
+        "elementId": "r40",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "r43",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a51",
+      "x": 1370,
+      "y": 445.0,
+      "width": 40,
+      "height": 0.0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0.0
+        ]
+      ],
+      "strokeColor": "#757575",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "strokeStyle": "dashed",
+      "startBinding": {
+        "elementId": "r43",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "r46",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "id": "t52",
+      "x": 540,
+      "y": 544,
+      "width": 350.35,
+      "height": 16.25,
+      "text": "grupo 2 (duplique de novo p/ cada grupo seguinte)",
+      "fontSize": 13,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "r53",
+      "x": 540,
+      "y": 570,
+      "width": 250,
+      "height": 150,
+      "strokeColor": "#757575",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "text",
+      "id": "t54",
+      "x": 552,
+      "y": 580,
+      "width": 77.0,
+      "height": 17.5,
+      "text": "QUEM SENTE",
+      "fontSize": 14,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "text",
+      "id": "t55",
+      "x": 552,
+      "y": 604,
+      "width": 105.60000000000001,
+      "height": 30.0,
+      "text": "preenche sozinho\nmin 10-20",
+      "fontSize": 12,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "r56",
+      "x": 830,
+      "y": 570,
+      "width": 250,
+      "height": 150,
+      "strokeColor": "#757575",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "text",
+      "id": "t57",
+      "x": 842,
+      "y": 580,
+      "width": 61.60000000000001,
+      "height": 17.5,
+      "text": "ONDE DÓI",
+      "fontSize": 14,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "text",
+      "id": "t58",
+      "x": 842,
+      "y": 604,
+      "width": 118.80000000000001,
+      "height": 30.0,
+      "text": "preenche um COLEGA\nde fora, min 20-40",
+      "fontSize": 12,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "r59",
+      "x": 1120,
+      "y": 570,
+      "width": 250,
+      "height": 150,
+      "strokeColor": "#757575",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "text",
+      "id": "t60",
+      "x": 1132,
+      "y": 580,
+      "width": 77.0,
+      "height": 17.5,
+      "text": "CUSTO HOJE",
+      "fontSize": 14,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "text",
+      "id": "t61",
+      "x": 1132,
+      "y": 604,
+      "width": 138.60000000000002,
+      "height": 30.0,
+      "text": "preenche OUTRO colega\nmin 45-65",
+      "fontSize": 12,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "r62",
+      "x": 1410,
+      "y": 570,
+      "width": 250,
+      "height": 150,
+      "strokeColor": "#757575",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      },
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "text",
+      "id": "t63",
+      "x": 1422,
+      "y": 580,
+      "width": 77.0,
+      "height": 17.5,
+      "text": "O QUE MUDA",
+      "fontSize": 14,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "text",
+      "id": "t64",
+      "x": 1422,
+      "y": 604,
+      "width": 92.4,
+      "height": 30.0,
+      "text": "volta pro dono\nmin 70-95, já com a spec",
+      "fontSize": 12,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "arrow",
+      "id": "a65",
+      "x": 790,
+      "y": 645.0,
+      "width": 40,
+      "height": 0.0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0.0
+        ]
+      ],
+      "strokeColor": "#757575",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "strokeStyle": "dashed",
+      "startBinding": {
+        "elementId": "r53",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "r56",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a66",
+      "x": 1080,
+      "y": 645.0,
+      "width": 40,
+      "height": 0.0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0.0
+        ]
+      ],
+      "strokeColor": "#757575",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "strokeStyle": "dashed",
+      "startBinding": {
+        "elementId": "r56",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "r59",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a67",
+      "x": 1370,
+      "y": 645.0,
+      "width": 40,
+      "height": 0.0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0.0
+        ]
+      ],
+      "strokeColor": "#757575",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "strokeStyle": "dashed",
+      "startBinding": {
+        "elementId": "r59",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "r62",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "id": "t68",
+      "x": 40,
+      "y": 776,
+      "width": 343.20000000000005,
+      "height": 20.0,
+      "text": "COMO O RODÍZIO FUNCIONA (visão de cima)",
+      "fontSize": 16,
+      "strokeColor": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "t69",
+      "x": 40,
+      "y": 798,
+      "width": 707.85,
+      "height": 16.25,
+      "text": "diferente da semana 5: aqui você preenche zonas do quadro de QUEM NÃO É SEU antes de voltar pro seu",
+      "fontSize": 13,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "ellipse",
+      "id": "e70",
+      "x": 40,
+      "y": 830,
+      "width": 220,
+      "height": 100,
+      "strokeColor": "#2563eb",
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "label": {
+        "text": "SEU QUADRO\n(quem sente)",
+        "fontSize": 14
+      }
+    },
+    {
+      "type": "ellipse",
+      "id": "e71",
+      "x": 380,
+      "y": 830,
+      "width": 220,
+      "height": 100,
+      "strokeColor": "#c92a2a",
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "label": {
+        "text": "QUADRO DO\nCOLEGA 1\n(onde dói)",
+        "fontSize": 13
+      }
+    },
+    {
+      "type": "ellipse",
+      "id": "e72",
+      "x": 720,
+      "y": 830,
+      "width": 220,
+      "height": 100,
+      "strokeColor": "#c2410c",
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "label": {
+        "text": "QUADRO DO\nCOLEGA 2\n(custo hoje)",
+        "fontSize": 13
+      }
+    },
+    {
+      "type": "ellipse",
+      "id": "e73",
+      "x": 380,
+      "y": 1000,
+      "width": 220,
+      "height": 100,
+      "strokeColor": "#15803d",
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "label": {
+        "text": "VOLTA PRO SEU\n(o que muda +\nrascunho da spec)",
+        "fontSize": 12
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a74",
+      "x": 260,
+      "y": 880,
+      "width": 120,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          120,
+          0
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "label": {
+        "text": "roda",
+        "fontSize": 14
+      },
+      "startBinding": {
+        "elementId": "e70",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "e71",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a75",
+      "x": 600,
+      "y": 880,
+      "width": 120,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          120,
+          0
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "label": {
+        "text": "roda",
+        "fontSize": 14
+      },
+      "startBinding": {
+        "elementId": "e71",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "e72",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a76",
+      "x": 830.0,
+      "y": 930,
+      "width": -340.0,
+      "height": 70,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -340.0,
+          70
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "label": {
+        "text": "roda de volta",
+        "fontSize": 14
+      },
+      "startBinding": {
+        "elementId": "e72",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "e73",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a77",
+      "x": 490.0,
+      "y": 1000,
+      "width": -340.0,
+      "height": -70,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -340.0,
+          -70
+        ]
+      ],
+      "strokeColor": "#757575",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "endArrowhead": "arrow",
+      "strokeStyle": "dashed",
+      "startBinding": {
+        "elementId": "e73",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "e70",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  },
+  "files": {}
+}

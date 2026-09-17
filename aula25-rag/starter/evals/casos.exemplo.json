@@ -1,0 +1,37 @@
+[
+  {
+    "id": "valor-bolsa-auxilio",
+    "entrada": "Qual é o valor da bolsa-auxílio de deslocamento pra quem mora fora de São Paulo?",
+    "criterio_aprovacao": "o chunk recuperado contém o valor exato em reais",
+    "tipo": "retrieval",
+    "contexto_esperado": ["trezentos e oitenta reais"]
+  },
+  {
+    "id": "prazo-devolutiva-reprovado",
+    "entrada": "Em quantos dias a coordenação responde um perfil reprovado?",
+    "criterio_aprovacao": "o chunk recuperado contém o prazo em dias úteis",
+    "tipo": "retrieval",
+    "contexto_esperado": ["cinco dias úteis"]
+  },
+  {
+    "id": "dominio-camila",
+    "entrada": "Qual domínio do catálogo a Camila escolheu como projeto?",
+    "criterio_aprovacao": "o chunk recuperado nomeia o domínio escolhido",
+    "tipo": "retrieval",
+    "contexto_esperado": ["captação de clientes"]
+  },
+  {
+    "id": "limite-troca-de-dominio",
+    "entrada": "Depois de qual semana trocar de domínio significa recomeçar o projeto do zero?",
+    "criterio_aprovacao": "o chunk recuperado cita o número da semana-limite",
+    "tipo": "retrieval",
+    "contexto_esperado": ["Semana 6"]
+  },
+  {
+    "id": "vitrine-e-obrigatoria",
+    "entrada": "A vitrine de perfis é obrigatória pra quem está no curso?",
+    "criterio_aprovacao": "o chunk recuperado responde que não é obrigatória",
+    "tipo": "retrieval",
+    "contexto_esperado": ["opcional"]
+  }
+]

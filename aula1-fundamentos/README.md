@@ -23,7 +23,7 @@ ambiente de coding agent (CLAUDE.md, uma skill, config de MCP) pra você complet
 
 3. Durante a aula, siga o [`GUIA-DO-ALUNO.md`](./GUIA-DO-ALUNO.md) — ele acompanha
    os slides, lab por lab.
-4. Depois da aula, faça a [`ATIVIDADE.md`](./ATIVIDADE.md) (entrega mínima ou completa).
+4. Depois da aula, faça a [`ENTREGAVEL.md`](./ENTREGAVEL.md) (entrega mínima ou completa).
 
 ## O que tem aqui
 
@@ -44,7 +44,7 @@ ambiente de coding agent (CLAUDE.md, uma skill, config de MCP) pra você complet
 |-- exemplos/
 |   `-- vibe-coding.js             <- o exemplo do "code review coletivo" (bloco 2)
 |-- GUIA-DO-ALUNO.md               <- passo a passo dos labs, pra acompanhar a aula
-`-- ATIVIDADE.md                   <- a atividade de fixação + rubrica
+`-- ENTREGAVEL.md                   <- a atividade de fixação + rubrica
 ```
 
 ## Pré-requisitos

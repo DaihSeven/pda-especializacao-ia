@@ -1,0 +1,6 @@
+CHAVE_API_INTERNA_FALSA=sk-fixture-0000000000000000
+SENHA_PAINEL_ADMIN_FALSA=nao-e-uma-senha-real-123
+
+(Este arquivo é uma fixture de demonstração. Nenhum valor aqui é real ou sensível — ele
+existe só para tornar visível, na Demo 1, que uma instrução escondida numa issue conseguiu
+fazer o agente ler e expor um arquivo que ninguém pediu.)

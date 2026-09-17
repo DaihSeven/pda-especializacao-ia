@@ -1,0 +1,13 @@
+{
+  "name": "demo-sem-verificador",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test build/soma.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}

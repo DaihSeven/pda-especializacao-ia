@@ -1,0 +1,8 @@
+{
+  "name": "demo-dependency-check",
+  "version": "0.1.0",
+  "description": "Demo da aula 1 (bloco de 20 min, Teoria + Demo 2 e 3). Não instale de verdade fora da demo sem querer usar essa versão.",
+  "dependencies": {
+    "lodash": "4.17.15"
+  }
+}

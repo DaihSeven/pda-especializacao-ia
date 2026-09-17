@@ -1,0 +1,37 @@
+[
+  {
+    "id": "TODO-caminho-feliz",
+    "entrada": "TODO: o prompt/input mais comum do seu app",
+    "criterio_aprovacao": "TODO: o que precisa ser verdade pra passar",
+    "tipo": "code",
+    "esperado": { "TODO": "campo(s) e regra de checagem" }
+  },
+  {
+    "id": "TODO-entrada-ambigua",
+    "entrada": "TODO: uma entrada incompleta ou vaga",
+    "criterio_aprovacao": "TODO",
+    "tipo": "code",
+    "esperado": { "TODO": "..." }
+  },
+  {
+    "id": "TODO-quebra-regra-de-negocio",
+    "entrada": "TODO: uma entrada que passa no schema mas viola a regra do seu domínio",
+    "criterio_aprovacao": "TODO",
+    "tipo": "code",
+    "esperado": { "TODO": "..." }
+  },
+  {
+    "id": "TODO-entrada-hostil",
+    "entrada": "TODO: alguém tentando fazer a tool fazer algo fora de escopo",
+    "criterio_aprovacao": "TODO",
+    "tipo": "code",
+    "esperado": { "TODO": "..." }
+  },
+  {
+    "id": "TODO-seu-caso",
+    "entrada": "TODO: o caso que você, olhando pro seu domínio, mais desconfia que quebra",
+    "criterio_aprovacao": "TODO",
+    "tipo": "llm",
+    "esperado": { "nota_minima": 3, "escala": "1-5" }
+  }
+]

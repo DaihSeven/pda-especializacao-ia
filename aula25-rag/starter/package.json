@@ -1,0 +1,19 @@
+{
+  "name": "aula25-rag",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Starter da Semana 13 (PDA) — pipeline de RAG: ingestão, chunking, embedding, retrieval e geração. Zero dependências de npm — só o fetch nativo do Node.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "checar-chave": "node src/teste-chave.js",
+    "ingerir": "node src/ingest.js",
+    "perguntar": "node src/ask.js",
+    "comparar-chunking": "node src/compare-chunking.js",
+    "eval-retrieval": "node evals/runner-retrieval.js"
+  },
+  "dependencies": {}
+}
